@@ -6,8 +6,116 @@
 <title>Mathur LED Bulb Manufacturing Pvt Ltd | Farrukhabad</title>
 <meta name="description" content="Mathur LED Bulb Manufacturing Pvt Ltd - All Types LED Bulb manufacturer at Plant 12, Pachrauli, Kaimganj, Farrukhabad, Uttar Pradesh 207502. Mobile 9648658667.">
 <meta name="keywords" content="Mathur LED, LED bulb manufacturer Farrukhabad, LED bulbs Kaimganj, LED bulb manufacturing, Pachrauli LED">
-<style>
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#14213d;background:#f6fbff}
+.bulk-section {
+  padding: 60px 5%;
+  background: #f7f9fc;
+  text-align: center;
+}
+
+.bulk-subtitle {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  color: #555;
+}
+
+.bulk-box {
+  max-width: 650px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.bulk-box form {
+  display: grid;
+  gap: 15px;
+}
+
+.bulk-box input,
+.bulk-box textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.bulk-box textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.bulk-btn {
+  border: none;
+  padding: 15px 20px;
+  border-radius: 8px;
+  background: #073d8f;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.bulk-btn:hover {
+  opacity: 0.9;
+}<style>
+<section id="bulk-enquiry" class="bulk-section">
+
+  <h2 class="title">Bulk / Wholesale Enquiry</h2>
+
+  <p class="bulk-subtitle">
+    Looking for bulk LED lighting products? Send us your requirement and our team will contact you.
+  </p>
+
+  <div class="bulk-box">
+    <form onsubmit="sendBulkEnquiry(event)">
+
+      <input type="text" id="bulkName" placeholder="Name" required>
+
+      <input type="tel" id="bulkMobile" placeholder="Mobile Number" required>
+
+      <input type="text" id="bulkProduct" placeholder="Product" required>
+
+      <input type="number" id="bulkQuantity" placeholder="Quantity" required>
+
+      <textarea id="bulkMessage" placeholder="Message"></textarea>
+
+      <button type="submit" class="bulk-btn">
+        Get a Bulk Order Quote
+      </button>
+
+    </form>
+  </div>
+
+</section>
+
+<script>
+function sendBulkEnquiry(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("bulkName").value;
+  const mobile = document.getElementById("bulkMobile").value;
+  const product = document.getElementById("bulkProduct").value;
+  const quantity = document.getElementById("bulkQuantity").value;
+  const message = document.getElementById("bulkMessage").value;
+
+  const whatsappMessage =
+    "Bulk / Wholesale Enquiry\n\n" +
+    "Name: " + name + "\n" +
+    "Mobile: " + mobile + "\n" +
+    "Product: " + product + "\n" +
+    "Quantity: " + quantity + "\n" +
+    "Message: " + message;
+
+  window.open(
+    "https://wa.me/919648568667?text=" + encodeURIComponent(whatsappMessage),
+    "_blank"
+  );
+}
+</script>
+  *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#14213d;background:#f6fbff}
 header{position:sticky;top:0;z-index:10;background:linear-gradient(120deg,#063b91,#0877d1);color:#fff;padding:10px 5%;display:flex;justify-content:space-between;align-items:center;gap:18px;box-shadow:0 3px 15px #0003}
 .brand{display:flex;align-items:center;gap:10px}.brand img{width:62px;height:62px;border-radius:50%;background:#fff;object-fit:cover}.brand strong{font-size:22px}.brand span{color:#ffe000}
 nav a{color:#fff;text-decoration:none;margin:0 8px;font-weight:700}
